@@ -4,8 +4,9 @@
   "description": "Free Open Source Template Dashboard Admin Vue Tailwind CSS",
   "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "windsass": "sass --watch src/assets/sass/app.windzo.scss src/assets/sass/css/windzo.css",
     "require": "npm i -g sass @vue/cli"
   },
@@ -21,7 +22,6 @@
     "autoprefixer": "^10.4.14",
     "chart.js": "^3.7.1",
     "click-outside-vue3": "^4.0.1",
-    "core-js": "^3.8.3",
     "dropzone-vue": "^0.1.11",
     "flowbite": "^1.4.1",
     "lodash": "^4.17.21",
@@ -41,9 +41,8 @@
   },
   "devDependencies": {
     "@iconify/vue": "^3.2.0",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
+    "@vitejs/plugin-vue": "^4.3.3",
+    "vite": "^4.5.2",
     "vue-cli-plugin-tailwind": "~3.0.0"
   }
 }

@@ -296,7 +296,7 @@
       },
 
       imageAssets(url) {
-        return require("@/assets/img/" + url);
+        return new URL("/assets/img/" + url, import.meta.url).href;
       },
     },
     mounted() {
