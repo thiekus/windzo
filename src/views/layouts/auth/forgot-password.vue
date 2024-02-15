@@ -75,9 +75,8 @@
     </div>
 </template>
 
-<script>
-export default {}
-</script>
+<script setup></script>
+
 <style>
 /* custom pattern https://superdesigner.co/tools/css-backgrounds */
 .bg-wave {

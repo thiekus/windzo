@@ -1,5 +1,5 @@
 <template>
-    <!-- Search component dropdown with name of type, press Ctrl + F -->
+    <!-- Search component Dropdown with name of type, press Ctrl + F -->
 
     <div class="card-page lg:h-screen h-auto p-3">
         <nav class="flex" aria-label="Breadcrumb">
@@ -81,8 +81,8 @@
                 class="card bg-white dark:bg-gray-800 w-full rounded-md p-5 border dark:border-gray-700 bpx"
             >
                 <h2 class="dark:text-gray-200">Dropdown default</h2>
-                <div class="wrapper-dropdown flex gap-4 w-full box-border mt-4">
-                    <dropdown placement="left">
+                <div class="wrapper-Dropdown flex gap-4 w-full box-border mt-4">
+                    <Dropdown placement="left">
                         <template v-slot:button>
                             <button
                                 class="flex px-5 py-3 rounded-md bg-primary text-white"
@@ -117,8 +117,8 @@
                                 >
                             </div>
                         </template>
-                    </dropdown>
-                    <dropdown placement="left">
+                    </Dropdown>
+                    <Dropdown placement="left">
                         <template v-slot:button>
                             <button
                                 class="flex px-5 py-3 rounded-md bg-transparent text-gray-500 border border-gray-300 dark:border-gray-500"
@@ -153,8 +153,8 @@
                                 >
                             </div>
                         </template>
-                    </dropdown>
-                    <dropdown placement="left">
+                    </Dropdown>
+                    <Dropdown placement="left">
                         <template v-slot:button>
                             <button
                                 class="flex px-5 py-3 rounded-md bg-transparent text-gray-500"
@@ -189,15 +189,15 @@
                                 >
                             </div>
                         </template>
-                    </dropdown>
+                    </Dropdown>
                 </div>
             </div>
             <div
                 class="card bg-white dark:bg-gray-800 w-full rounded-md p-5 border dark:border-gray-700 bpx"
             >
                 <h2 class="dark:text-gray-200">Dropdown Icon</h2>
-                <div class="wrapper-dropdown flex gap-4 w-full box-border mt-4">
-                    <dropdown placement="left">
+                <div class="wrapper-Dropdown flex gap-4 w-full box-border mt-4">
+                    <Dropdown placement="left">
                         <template v-slot:button>
                             <button
                                 class="flex px-5 py-3 rounded-md bg-primary text-white"
@@ -232,8 +232,8 @@
                                 >
                             </div>
                         </template>
-                    </dropdown>
-                    <dropdown placement="left">
+                    </Dropdown>
+                    <Dropdown placement="left">
                         <template v-slot:button>
                             <button
                                 class="flex px-5 py-3 rounded-md bg-transparent text-gray-500 border border-gray-300 dark:border-gray-500"
@@ -268,8 +268,8 @@
                                 >
                             </div>
                         </template>
-                    </dropdown>
-                    <dropdown placement="left">
+                    </Dropdown>
+                    <Dropdown placement="left">
                         <template v-slot:button>
                             <button
                                 class="flex px-5 py-3 rounded-md bg-transparent text-gray-500"
@@ -304,24 +304,17 @@
                                 >
                             </div>
                         </template>
-                    </dropdown>
+                    </Dropdown>
                 </div>
             </div>
         </div>
     </div>
 </template>
-<script>
+<script setup>
 import { Icon } from '@iconify/vue'
 import Dropdown from '../../components/Dropdown.vue'
-export default {
-    components: {
-        Dropdown,
-        Icon,
-    },
-    methods: {
-        alert() {
-            alert('Hello')
-        },
-    },
+
+const alert = () => {
+    alert('Hello')
 }
 </script>

@@ -248,19 +248,14 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import Modal from '@/components/Modal.vue'
-export default {
-    components: {
-        Modal,
-    },
-    methods: {
-        test() {
-            alert('clicked!')
-        },
-        confirmDelete() {
-            alert('deleted!')
-        },
-    },
+
+const test = () => {
+    alert('clicked!')
+}
+
+const confirmDelete = () => {
+    alert('deleted!')
 }
 </script>

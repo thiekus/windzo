@@ -443,13 +443,7 @@
     </div>
 </template>
 
-<script>
+<script setup>
 import Alert from '@/components/Alert.vue'
 import { Icon } from '@iconify/vue'
-export default {
-    components: {
-        Alert,
-        Icon,
-    },
-}
 </script>
